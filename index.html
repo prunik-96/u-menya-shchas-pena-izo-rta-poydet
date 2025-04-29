@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Излечение от War Thunder</title>
+  <title>Излечение от Вар Тандер</title>
   <style>
     body {
       font-family: sans-serif;
@@ -19,6 +19,18 @@
     }
     header h1 {
       margin: 0;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     .content {
       padding: 20px;
@@ -44,6 +56,8 @@
       margin-bottom: 20px;
       border: none;
       border-radius: 4px;
+      background-color: #444;
+      color: #fff;
     }
     button {
       background-color: #43a047;
@@ -62,17 +76,36 @@
       margin-bottom: 15px;
       border-radius: 6px;
     }
+    .download-link {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      font-size: 0.9rem;
+    }
+    .download-link a {
+      color: #888;
+      text-decoration: none;
+    }
+    .download-link a:hover {
+      color: #ccc;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Как излечиться от War Thunder</h1>
+    <h1>Как излечиться от Вар Тандер</h1>
     <p>Ты не один. Мы прошли через это.</p>
+    <nav>
+      <a href="html101.html">📘 Как писать на HTML</a>
+      <a href="index.html">💀 Главная</a>
+      <a href="top10beer.html">🍺 ТОП 10 пива</a>
+    </nav>
   </header>
+
   <div class="content">
     <div class="step">
       <h2>Шаг 1: Признай проблему</h2>
-      <p>Если ты зашёл на этот сайт — это уже победа. War Thunder не должен контролировать твою жизнь.</p>
+      <p>Если ты зашёл на этот сайт — это уже победа. Вар Тандер не должен контролировать твою жизнь.</p>
     </div>
     <div class="step">
       <h2>Шаг 2: Удали игру</h2>
@@ -100,6 +133,10 @@
     </div>
   </div>
 
+  <div class="download-link">
+    <a href="https://warthunder.com/ru" target="_blank">🤡 Скачать War Thunder (не надо!)</a>
+  </div>
+
   <script>
     const form = document.getElementById('reviewForm');
     const reviewsDiv = document.getElementById('reviews');
@@ -117,9 +154,3 @@
   </script>
 </body>
 </html>
-
-        </section>
-      </main>
-    </div>
-  );
-}
