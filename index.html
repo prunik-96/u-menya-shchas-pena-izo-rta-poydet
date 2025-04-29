@@ -1,69 +1,123 @@
-import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
-import { Moon } from "lucide-react";
-import { motion } from "framer-motion";
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Излечение от War Thunder</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #c62828;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .content {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .step {
+      margin-bottom: 20px;
+    }
+    .step h2 {
+      color: #ff8a65;
+    }
+    form {
+      background: #2c2c2c;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 40px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #43a047;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .reviews {
+      margin-top: 40px;
+    }
+    .review {
+      background: #333;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Как излечиться от War Thunder</h1>
+    <p>Ты не один. Мы прошли через это.</p>
+  </header>
+  <div class="content">
+    <div class="step">
+      <h2>Шаг 1: Признай проблему</h2>
+      <p>Если ты зашёл на этот сайт — это уже победа. War Thunder не должен контролировать твою жизнь.</p>
+    </div>
+    <div class="step">
+      <h2>Шаг 2: Удали игру</h2>
+      <p>Прямо сейчас. Не откладывай. Удаление — первый шаг к свободе.</p>
+    </div>
+    <div class="step">
+      <h2>Шаг 3: Найди здоровую альтернативу</h2>
+      <p>Оффлайн-игры, хобби, книги, прогулки. Да, даже Minecraft или Factorio — уже лучше.</p>
+    </div>
+    <div class="step">
+      <h2>Шаг 4: Общайся с другими "выздоравливающими"</h2>
+      <p>Расскажи свою историю. Поддержи других. Вместе мы справимся.</p>
+    </div>
 
-export default function FanficSite() {
-  return (
-    <div className="min-h-screen bg-gray-900 text-white p-6">
-      <header className="flex items-center justify-between mb-8">
-        <h1 className="text-4xl font-bold">Fanfics Haven</h1>
-        <Moon className="text-yellow-400" />
-      </header>
+    <form id="reviewForm">
+      <h2>Оставить отзыв</h2>
+      <input type="text" id="name" placeholder="Ваше имя" required>
+      <textarea id="message" placeholder="Ваш путь избавления..." required></textarea>
+      <button type="submit">Отправить</button>
+    </form>
 
-      <main className="grid gap-8 max-w-3xl mx-auto">
-        <Card className="bg-gray-800 border-gray-700">
-          <CardContent className="p-6">
-            <h2 className="text-2xl font-semibold mb-4">Регистрация</h2>
-            <form className="grid gap-4 mb-8">
-              <Input placeholder="Имя пользователя" className="bg-gray-700 border-gray-600 placeholder-gray-400" />
-              <Input type="email" placeholder="Email" className="bg-gray-700 border-gray-600 placeholder-gray-400" />
-              <Input type="password" placeholder="Пароль" className="bg-gray-700 border-gray-600 placeholder-gray-400" />
-              <Button className="bg-green-600 hover:bg-green-700">Зарегистрироваться</Button>
-            </form>
+    <div class="reviews" id="reviews">
+      <h2>Отзывы</h2>
+      <!-- Отзывы будут добавляться сюда -->
+    </div>
+  </div>
 
-            <h2 className="text-2xl font-semibold mb-4">Написать фанфик</h2>
-            <form className="grid gap-4">
-              <Input placeholder="Название фанфика" className="bg-gray-700 border-gray-600 placeholder-gray-400" />
-              <Input placeholder="Фандом (например, Noita)" className="bg-gray-700 border-gray-600 placeholder-gray-400" />
-              <Select>
-                <SelectTrigger className="bg-gray-700 border-gray-600 text-gray-300">
-                  <SelectValue placeholder="Выбери жанр" />
-                </SelectTrigger>
-                <SelectContent className="bg-gray-800 text-white">
-                  <SelectItem value="romance">Романтика</SelectItem>
-                  <SelectItem value="action">Экшн</SelectItem>
-                  <SelectItem value="fantasy">Фэнтези</SelectItem>
-                  <SelectItem value="horror">Хоррор</SelectItem>
-                  <SelectItem value="comedy">Комедия</SelectItem>
-                </SelectContent>
-              </Select>
-              <Textarea placeholder="Ваш фанфик..." rows={10} className="bg-gray-700 border-gray-600 placeholder-gray-400" />
-              <Button className="bg-purple-600 hover:bg-purple-700">Опубликовать</Button>
-            </form>
-          </CardContent>
-        </Card>
+  <script>
+    const form = document.getElementById('reviewForm');
+    const reviewsDiv = document.getElementById('reviews');
 
-        <section className="grid gap-4">
-          <h2 className="text-2xl font-semibold">Последние фанфики</h2>
-          {[1, 2, 3].map((id) => (
-            <motion.div
-              key={id}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: id * 0.1 }}
-              className="bg-gray-800 rounded-2xl shadow-md p-4"
-            >
-              <h3 className="text-xl font-bold">Название фанфика #{id}</h3>
-              <p className="text-gray-400">Фандом: Пример</p>
-              <p className="text-gray-400">Жанр: Романтика</p>
-              <p className="mt-2 text-sm text-gray-300">Краткое описание или начало фанфика...</p>
-            </motion.div>
-          ))}
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const message = document.getElementById('message').value;
+      const review = document.createElement('div');
+      review.className = 'review';
+      review.innerHTML = `<strong>${name}</strong><p>${message}</p>`;
+      reviewsDiv.appendChild(review);
+      form.reset();
+    });
+  </script>
+</body>
+</html>
+
         </section>
       </main>
     </div>
