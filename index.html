@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Примеры HTML</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #c62828;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .content {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .example {
+      background-color: #2c2c2c;
+      padding: 15px;
+      border-radius: 6px;
+      margin-bottom: 25px;
+    }
+    .example h3 {
+      color: #ff8a65;
+    }
+    pre {
+      background-color: #1b1b1b;
+      padding: 10px;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Примеры HTML-кода</h1>
+    <p>20 полезных примеров с пояснениями</p>
+    <nav>
+      <a href="html101.html">📘 HTML</a>
+      <a href="htmlexamples.html">💡 Примеры</a>
+      <a href="css101.html">🎨 CSS</a>
+      <a href="js101.html">⚙️ JavaScript</a>
+      <a href="index.html">💀 Главная</a>
+      <a href="top10beer.html">🍺 ТОП 10 пива</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <div class="example">
+      <h3>1. Заголовок</h3>
+      <p>Тег <code>&lt;h1&gt;</code> используется для заголовков.</p>
+      <pre>&lt;h1&gt;Привет, мир!&lt;/h1&gt;</pre>
+    </div>
+
+    <div class="example">
+      <h3>2. Параграф</h3>
+      <p>Тег <code>&lt;p&gt;</code> создаёт абзац текста.</p>
+      <pre>&lt;p&gt;Это параграф текста.&lt;/p&gt;</pre>
+    </div>
+
+    <div class="example">
+      <h3>3. Ссылка</h3>
+      <p>Тег <code>&lt;a&gt;</code> создаёт гиперссылку.</p>
+      <pre>&lt;a href="https://example.com"&gt;Перейти&lt;/a&gt;</pre>
+    </div>
+
+    <div class="example">
+      <h3>4. Картинка</h3>
+      <p>Тег <code>&lt;img&gt;</code> вставляет изображение.</p>
+      <pre>&lt;img src="image.jpg" alt="Описание"&gt;</pre>
+    </div>
+
+    <div class="example">
+      <h3>5. Список (ненумерованный)</h3>
+      <p><code>&lt;ul&gt;</code> создаёт маркированный список.</p>
+      <pre>
+&lt;ul&gt;
+  &lt;li&gt;Элемент 1&lt;/li&gt;
+  &lt;li&gt;Элемент 2&lt;/li&gt;
+&lt;/ul&gt;</pre>
+    </div>
+
+    <div class="example">
+      <h3>6. Список (нумерованный)</h3>
+      <p><code>&lt;ol&gt;</code> создаёт нумерованный список.</p>
+      <pre>
+&lt;ol&gt;
+  &lt;li&gt;Первый&lt;/li&gt;
+  &lt;li&gt;Второй&lt;/li&gt;
+&lt;/ol&gt;</pre>
+    </div>
+
+    <div class="example">
+      <h3>7. Таблица</h3>
+      <p>Таблица создаётся с помощью <code>&lt;table&gt;</code>.</p>
+      <pre>
+&lt;table&gt;
+  &lt;tr&gt;&lt;th&gt;Имя&lt;/th&gt;&lt;th&gt;Возраст&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Аня&lt;/td&gt;&lt;td&gt;23&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</pre>
+    </div>
+
+    <div class="example">
+      <h3>8. Кнопка</h3>
+      <p>Тег <code>&lt;button&gt;</code> создаёт кнопку.</p>
+      <pre>&lt;button&gt;Нажми меня&lt;/button&gt;</pre>
+    </div>
+
+    <div class="example">
+      <h3>9. Форма</h3>
+      <p>Форма для ввода данных.</p>
+      <pre>
+&lt;form&gt;
+  &lt;input type="text" placeholder="Ваше имя"&gt;
+&lt;/form&gt;</pre>
+    </div>
+
+    <div class="example">
+      <h3>10. Комментарий</h3>
+      <p>Комментарии не отображаются на странице.</p>
+      <pre>&lt;!-- Это комментарий --&gt;</pre>
+    </div>
+
+    <div class="example">
+      <h3>11. Линия</h3>
+      <p><code>&lt;hr&gt;</code> создаёт горизонтальную линию.</p>
+      <pre>&lt;hr&gt;</pre>
+    </div>
+
+    <div class="example">
+      <h3>12. Жирный текст</h3>
+      <p>Для выделения текста жирным.</p>
+      <pre>&lt;b&gt;Важно!&lt;/b&gt;</pre>
+    </div>
+
+    <div class="example">
+      <h3>13. Курсив</h3>
+      <p>Для выделения текста курсивом.</p>
+      <pre>&lt;i&gt;Наклонный текст&lt;/i&gt;</pre>
+    </div>
+
+    <div class="example">
+      <h3>14. Подчёркнутый текст</h3>
+      <p><code>&lt;u&gt;</code> подчёркивает текст.</p>
+      <pre>&lt;u&gt;Важная информация&lt;/u&gt;</pre>
+    </div>
+
+    <div class="example">
+      <h3>15. Вставка блока</h3>
+      <p>Тег <code>&lt;div&gt;</code> — универсальный контейнер.</p>
+      <pre>&lt;div&gt;Контейнер&lt;/div&gt;</pre>
+    </div>
+
+    <div class="example">
+      <h3>16. span</h3>
+      <p><code>&lt;span&gt;</code> — строчный контейнер.</p>
+      <pre>&lt;p&gt;Текст с &lt;span&gt;выделением&lt;/span&gt;&lt;/p&gt;</pre>
+    </div>
+
+    <div class="example">
+      <h3>17. Тег &lt;br&gt;</h3>
+      <p>Переход на новую строку.</p>
+      <pre>Привет&lt;br&gt;Мир!</pre>
+    </div>
+
+    <div class="example">
+      <h3>18. Встраивание видео</h3>
+      <p>Через тег <code>&lt;iframe&gt;</code>.</p>
+      <pre>
+&lt;iframe width="560" height="315"
+src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+      </pre>
+    </div>
+
+    <div class="example">
+      <h3>19. Метаданные</h3>
+      <p>Внутри тега <code>&lt;head&gt;</code>.</p>
+      <pre>&lt;meta charset="UTF-8"&gt;</pre>
+    </div>
+
+    <div class="example">
+      <h3>20. Подключение CSS</h3>
+      <p>Тег <code>&lt;link&gt;</code> для подключения стилей.</p>
+      <pre>&lt;link rel="stylesheet" href="style.css"&gt;</pre>
+    </div>
+  </div>
+</body>
+</html>
