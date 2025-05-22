@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Как писать на CSS</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #00695c;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .content {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    pre {
+      background-color: #2c2c2c;
+      padding: 15px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    .example {
+      margin-bottom: 40px;
+    }
+    .example h2 {
+      color: #26a69a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Как писать на CSS</h1>
+    <p>Стили для сайтов — легко и красиво!</p>
+    <nav>
+      <a href="html101.html">📘 HTML</a>
+      <a href="css101.html">🎨 CSS</a>
+      <a href="js101.html">⚙️ JS</a>
+      <a href="index.html">💀 Главная</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <p>CSS описывает внешний вид HTML-элементов. Вот 20 полезных примеров:</p>
+
+    <div class="example">
+      <h2>1. Цвет текста</h2>
+      <pre>
+p {
+  color: red;
+}</pre>
+      <p>Делает текст в абзаце красным.</p>
+    </div>
+
+    <div class="example">
+      <h2>2. Фон</h2>
+      <pre>
+body {
+  background-color: black;
+}</pre>
+      <p>Задаёт чёрный фон для страницы.</p>
+    </div>
+
+    <div class="example">
+      <h2>3. Размер шрифта</h2>
+      <pre>
+h1 {
+  font-size: 32px;
+}</pre>
+      <p>Увеличивает заголовок.</p>
+    </div>
+
+    <div class="example">
+      <h2>4. Центрирование текста</h2>
+      <pre>
+p {
+  text-align: center;
+}</pre>
+      <p>Центрирует текст внутри абзаца.</p>
+    </div>
+
+    <div class="example">
+      <h2>5. Жирный текст</h2>
+      <pre>
+strong {
+  font-weight: bold;
+}</pre>
+      <p>Делает текст жирным.</p>
+    </div>
+
+    <div class="example">
+      <h2>6. Рамка</h2>
+      <pre>
+div {
+  border: 2px solid white;
+}</pre>
+      <p>Добавляет белую рамку вокруг блока.</p>
+    </div>
+
+    <div class="example">
+      <h2>7. Скругление углов</h2>
+      <pre>
+img {
+  border-radius: 10px;
+}</pre>
+      <p>Скругляет углы изображения.</p>
+    </div>
+
+    <div class="example">
+      <h2>8. Тень текста</h2>
+      <pre>
+h1 {
+  text-shadow: 2px 2px 5px black;
+}</pre>
+      <p>Добавляет тень под текстом.</p>
+    </div>
+
+    <div class="example">
+      <h2>9. Внутренний отступ</h2>
+      <pre>
+div {
+  padding: 20px;
+}</pre>
+      <p>Добавляет пространство внутри блока.</p>
+    </div>
+
+    <div class="example">
+      <h2>10. Внешний отступ</h2>
+      <pre>
+div {
+  margin: 20px;
+}</pre>
+      <p>Добавляет пространство вокруг блока.</p>
+    </div>
+
+    <div class="example">
+      <h2>11. Шрифт</h2>
+      <pre>
+body {
+  font-family: Arial, sans-serif;
+}</pre>
+      <p>Задает шрифт для текста.</p>
+    </div>
+
+    <div class="example">
+      <h2>12. Псевдокласс :hover</h2>
+      <pre>
+a:hover {
+  color: yellow;
+}</pre>
+      <p>Изменяет цвет ссылки при наведении.</p>
+    </div>
+
+    <div class="example">
+      <h2>13. Отображение по центру</h2>
+      <pre>
+div {
+  margin: 0 auto;
+  width: 50%;
+}</pre>
+      <p>Центрирует блок по горизонтали.</p>
+    </div>
+
+    <div class="example">
+      <h2>14. Плавающие элементы</h2>
+      <pre>
+img {
+  float: left;
+  margin-right: 10px;
+}</pre>
+      <p>Прижимает изображение к левому краю.</p>
+    </div>
+
+    <div class="example">
+      <h2>15. Флексбокс</h2>
+      <pre>
+.container {
+  display: flex;
+  justify-content: space-between;
+}</pre>
+      <p>Распределяет элементы внутри блока.</p>
+    </div>
+
+    <div class="example">
+      <h2>16. Скрыть элемент</h2>
+      <pre>
+.hidden {
+  display: none;
+}</pre>
+      <p>Полностью скрывает элемент со страницы.</p>
+    </div>
+
+    <div class="example">
+      <h2>17. Позиционирование</h2>
+      <pre>
+.box {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}</pre>
+      <p>Устанавливает точное положение элемента.</p>
+    </div>
+
+    <div class="example">
+      <h2>18. Анимация</h2>
+      <pre>
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.fade {
+  animation: fadeIn 2s ease-in;
+}</pre>
+      <p>Простая анимация появления.</p>
+    </div>
+
+    <div class="example">
+      <h2>19. Размеры блока</h2>
+      <pre>
+.box {
+  width: 300px;
+  height: 200px;
+}</pre>
+      <p>Устанавливает размеры для блока.</p>
+    </div>
+
+    <div class="example">
+      <h2>20. Градиентный фон</h2>
+      <pre>
+body {
+  background: linear-gradient(to right, red, orange);
+}</pre>
+      <p>Создаёт плавный переход цвета фона.</p>
+    </div>
+
+  </div>
+</body>
+</html>
