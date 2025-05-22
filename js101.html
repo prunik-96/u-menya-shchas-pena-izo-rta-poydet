@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Гайд по JavaScript</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #c62828;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .content {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .example {
+      background-color: #2c2c2c;
+      padding: 15px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+    pre {
+      background-color: #111;
+      padding: 10px;
+      overflow-x: auto;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Основы JavaScript</h1>
+    <p>Учимся программировать прямо в браузере!</p>
+    <nav>
+      <a href="html101.html">📘 HTML</a>
+      <a href="css101.html">🎨 CSS</a>
+      <a href="js101.html">💻 JavaScript</a>
+      <a href="index.html">💀 Главная</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <div class="example">
+      <h2>1. Подключение JavaScript</h2>
+      <p>Скрипты можно подключить внутри HTML через тег <code>&lt;script&gt;</code>:</p>
+      <pre>&lt;script&gt;
+  alert("Привет, мир!");
+&lt;/script&gt;</pre>
+    </div>
+
+    <div class="example">
+      <h2>2. Переменные (let, const)</h2>
+      <p>Создаём переменные и выводим их в консоль:</p>
+      <pre>
+let name = "Алекс";
+console.log(name);
+const year = 2025;
+console.log(year);</pre>
+    </div>
+
+    <div class="example">
+      <h2>3. Условия (if)</h2>
+      <p>Выполняем код в зависимости от условия:</p>
+      <pre>
+let score = 80;
+if (score > 60) {
+  console.log("Ты прошёл!");
+} else {
+  console.log("Попробуй ещё раз.");
+}</pre>
+    </div>
+
+    <div class="example">
+      <h2>4. Циклы (for)</h2>
+      <p>Выводим числа от 1 до 5:</p>
+      <pre>
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}</pre>
+    </div>
+
+    <div class="example">
+      <h2>5. Функции</h2>
+      <p>Создаём функцию и вызываем её:</p>
+      <pre>
+function greet(name) {
+  console.log("Привет, " + name + "!");
+}
+greet("Мир");</pre>
+    </div>
+
+    <div class="example">
+      <h2>6. Работа с DOM</h2>
+      <p>Меняем текст на странице:</p>
+      <pre>
+// HTML: &lt;p id="demo"&gt;Старый текст&lt;/p&gt;
+document.getElementById("demo").textContent = "Новый текст!";</pre>
+    </div>
+
+    <div class="example">
+      <h2>7. События (onclick)</h2>
+      <p>Реакция на клик по кнопке:</p>
+      <pre>
+// HTML: &lt;button onclick="sayHi()"&gt;Нажми меня&lt;/button&gt;
+function sayHi() {
+  alert("Привет!");
+}</pre>
+    </div>
+
+    <div class="example">
+      <h2>8. Массивы</h2>
+      <p>Сохраняем список значений:</p>
+      <pre>
+let fruits = ["яблоко", "банан", "груша"];
+console.log(fruits[0]); // яблоко</pre>
+    </div>
+
+    <div class="example">
+      <h2>9. Объекты</h2>
+      <p>Храним связанные данные:</p>
+      <pre>
+let user = {
+  name: "Игорь",
+  age: 30
+};
+console.log(user.name);</pre>
+    </div>
+
+    <div class="example">
+      <h2>10. Взаимодействие с пользователем</h2>
+      <p>Получаем данные через prompt:</p>
+      <pre>
+let name = prompt("Как тебя зовут?");
+alert("Привет, " + name + "!");</pre>
+    </div>
+
+    <p>Это лишь основы JavaScript. Дальше — больше: анимации, работа с сервером, игры!</p>
+  </div>
+</body>
+</html>
